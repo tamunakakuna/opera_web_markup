@@ -1,0 +1,152 @@
+/*____BASIC PROPERTIES START_____ */
+body{
+    margin:0px;
+    padding: 0px;
+    background-image: url(OperaFiles/imgs/theatre.jpg);
+    background-size: cover;
+
+}
+@font-face {
+    font-family: Intelevise;
+    src:url(OperaFiles/fonts/SFIntellivised-Bold.ttf);
+}
+body * {
+    font-family: Intelevise;
+}
+
+/*____MENU PART_____ */
+#manu_activator {
+    font-size: 50px;
+    color: white;
+    cursor: pointer;
+    width: 20%;
+    height: 70px;
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+#menu{
+    position: absolute;
+    width:20%;
+    top:0px;
+    bottom:0px;
+    background-color: black;
+    text-align: center;
+    left: -1999px;
+    transition-duration: 1.5s;
+}
+.menu_item{
+    display: block;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    font-size: 26px;
+    padding: 20px;
+    border-bottom: 2px solid white;
+
+}
+#socials{
+    margin-top: 30px;
+}
+.soc_icons{
+    margin: 5px;
+    font-size: 32px;
+    text-decoration: none;
+    color: white; 
+}
+#manu_activator:hover + #menu{
+    left:0px;
+}
+#menu:hover{
+    left:0px;
+}
+.menu_item:hover{
+    transition-duration: 1s;
+    color: blueviolet;
+}
+.menu_item:hover:before{
+    content: "";
+    display: inline-block;
+    background-color: white;
+    width: 10px;
+    height: 10px;
+    transform: rotate(50deg);
+    margin-right: 10px;
+}
+/*____Premiers_____ */
+#month_premiers{
+    color:white;
+    width: 800px;
+    height: 500px;
+    position: absolute;
+    top: 0px;
+    margin-left: 30%;
+}
+#month_premiers h2{
+    font-size: 32px;
+    text-align: center;
+}
+.poster_wrapper{
+    transition-duration: 1s;
+    width: 150px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    margin: 10px;
+
+}
+.poster_wrapper img{
+    width:100%;
+    height: auto;   
+}
+.poster_wrapper:hover{
+    width:200px;
+}
+.poster_overlay{
+    box-sizing: border-box;
+    width: 100%;
+    height: 40px;
+    background-color: rgba(0,0,0, 0.5);
+    text-align: center;
+    padding-top: 10px;
+    position: absolute;
+    top: 35%;
+    cursor: pointer;
+}
+
+/*____Contact_____ */
+#contact{
+    position: absolute;
+    color:white;
+    bottom: 5%;
+    left:1%;
+}
+#contact > div{
+    margin: 10px;
+}
+
+#read_about{
+    display: block;
+    width: 300px;
+    height: 100px;
+    border-radius: 30px;
+    border: 4px solid white;
+    position: absolute;
+    bottom: 5%;
+    left:40%;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 32px;
+    color: white;
+    text-align: center;
+    padding-top: 25px;
+    box-sizing: border-box;
+}
+#read_about:hover{
+    color:black;
+    transition-duration: 2s;
+    background-color: white;
+    box-shadow: 20px 20px 50px 10px silver;
+}
